@@ -1,0 +1,35 @@
+# Copy to .dev.vars for local development with `npm run dev`.
+# Do not commit real secrets.
+#
+# MCP_SHARED_SECRET is intentionally required by the Cloudflare Deploy Button.
+# It protects OAuth connection and manual MCP access.
+# Optional production secrets are commented out so the first deploy stays simple.
+
+# Required. Generate a long random value before deploy.
+MCP_SHARED_SECRET=
+
+# Optional. Use only if your MCP client needs a fixed public URL.
+# PUBLIC_BASE_URL=http://localhost:8787
+
+# Optional. Telegram messages.
+# TELEGRAM_BOT_TOKEN=
+# TELEGRAM_CHAT_ID=
+
+# Optional. Discord messages.
+# DISCORD_WEBHOOK_URL=
+
+# Optional. Slack messages.
+# SLACK_WEBHOOK_URL=
+
+# Optional. Default Make/Zapier/n8n/custom webhook.
+# DEFAULT_WEBHOOK_URL=
+
+# Optional. Worker Builder / child Workers.
+# CF_ACCOUNT_ID=
+# CF_API_TOKEN=
+# CF_WORKERS_DEV_SUBDOMAIN=
+
+# Optional examples for saved custom API connectors.
+# CRM_API_TOKEN=
+# BILLING_API_KEY=
+# CHILD_WORKER_TOKEN=
